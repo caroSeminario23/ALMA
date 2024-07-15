@@ -6,7 +6,7 @@ body {
 }
 .v1_2 {
   width: 100%;
-  height: 1024px;
+  height: 100vh;
   background: rgba(240,143,0,0.5);
   opacity: 1;
   position: relative;
