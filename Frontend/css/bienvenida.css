@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+}
+.v1_2 {
+  width: 100%;
+  height: 1024px;
+  background: rgba(240,143,0,0.5);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.v9_2 {
+  width: 100%;
+  height: 920px;
+  background: rgba(242,209,144,1);
+  opacity: 1;
+  position: absolute;
+  top: 52px;
+  left: 51px;
+  border-top-left-radius: 72px;
+  border-top-right-radius: 72px;
+  border-bottom-left-radius: 72px;
+  border-bottom-right-radius: 72px;
+  overflow: hidden;
+}
+.v9_5 {
+  width: 361px;
+  color: rgba(110,53,29,0.800000011920929);
+  position: absolute;
+  top: 163px;
+  left: 647px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Crimson Text;
+  font-weight: Bold;
+  font-size: 128px;
+  opacity: 1;
+  text-align: center;
+}
+.v9_6 {
+  width: 855px;
+  color: rgba(156,98,65,1);
+  position: absolute;
+  top: 329px;
+  left: 293px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Crimson Text;
+  font-weight: SemiBold Italic;
+  font-size: 40px;
+  opacity: 1;
+  text-align: center;
+}
+.v9_7 {
+  width: 100%;
+  height: 450px;
+  background: rgba(216,194,178,1);
+  opacity: 1;
+  position: absolute;
+  top: 435px;
+  left: 102px;
+  border-top-left-radius: 61px;
+  border-top-right-radius: 61px;
+  border-bottom-left-radius: 61px;
+  border-bottom-right-radius: 61px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+.v9_12 {
+  width: 100%;
+  color: rgba(110,53,29,1);
+  position: absolute;
+  top: 589px;
+  left: 137px;
+  font-family: Crimson Text;
+  font-weight: Regular;
+  font-size: 29px;
+  opacity: 1;
+  text-align: left;
+}
+.v9_14 {
+  width: 241px;
+  height: 186px;
+  background: url("../images/v9_14.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 143px;
+  left: 406px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+.v9_15 {
+  width: 100%;
+  height: 104px;
+  background: rgba(156,98,65,0.5);
+  opacity: 1;
+  position: absolute;
+  top: 465px;
+  left: 137px;
+  border-top-left-radius: 31px;
+  border-top-right-radius: 31px;
+  border-bottom-left-radius: 31px;
+  border-bottom-right-radius: 31px;
+  overflow: hidden;
+}
+.v9_13 {
+  width: 335px;
+  color: rgba(216,194,178,1);
+  position: absolute;
+  top: 486px;
+  left: 553px;
+  font-family: Crimson Text;
+  font-weight: Bold;
+  font-size: 48px;
+  opacity: 1;
+  text-align: left;
+}
