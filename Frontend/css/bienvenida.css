@@ -108,7 +108,7 @@ body {
   border-bottom-left-radius: 31px;
   border-bottom-right-radius: 31px;
   overflow: hidden;
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25); /* Añade esta línea */
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25); 
 }
 .v9_13 {
   width: 80%;
@@ -121,4 +121,18 @@ body {
   font-size: 3vw;
   opacity: 1;
   text-align: left;
+}
+.regresar {
+  width: 5%;
+  height: 7%;
+  background: url("../images/avanzar.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 90% 100%;
+  opacity: 1;
+  position: absolute;
+  top: 10%;
+  left: 87%;
+  overflow: hidden; 
+  cursor: pointer;
 }
