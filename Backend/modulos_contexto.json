@@ -1,12 +1,7 @@
 {
     "inicio": "Pregunta siempre por el bienestar del usuario y hazle saber que estás aquí para ayudar.",
 
-    "definicion_violencia intrafamiliar": ["Proporciona información sobre qué es la violencia intrafamiliar. Considera la siguiente información: ",
-                                "Es el conjunto de actitudes o comportamientos de abuso (ser sexual, físico o psicológico) perpetrados en el hogar o unidad doméstica, ", 
-                                "generalmente por un miembro de la familia que vive con la víctima, que puede ser esta varón o mujer, infante, adolescente o adulto, ",
-                                "con el empleo deliberado de la fuerza. Esto ocurre entre padres, hijos y padres y entre hermanos, por ejemplo. Además, es considera ",
-                                "como un grave obstáculo para el desarrollo y la paz. La violencia intrafamiliar también es conocida como violencia doméstica, ",
-                                "violencia familiar o violencia en las familias."],
+    "definicion_violencia intrafamiliar": ["Busca proporcionar información general sobre conflictos familiares y cómo estos pueden afectar a los individuos dentro del hogar. La información debe ser educativa y promover el bienestar y la paz."],
 
     "objetivos_violencia_intrafamiliar":["Proporciona información sobre los objetivos de la violencia intrafamiliar. Considera la siguiente información: ",
                                 "El objetivo de la violencia intrafamiliar es ejercer poder y control sobre otra persona. ",
