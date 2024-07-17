@@ -22,27 +22,29 @@ class GeminiChatbot:
             "Ofrece ayuda con empatía, comprensión y confidencialidad."
         )
         
-        # Carga los módulos de contexto desde un archivo JSON
         with open("/Users/carolinasv/Documents/VS_Code/ALMA/Backend/modulos_contexto.json", "r") as file:
             self.modules = json.load(file)
         
-        # Inicializa el contexto actual
         self.current_context = self.base_context
 
-    # Agrega un módulo al contexto actual
     def add_module_to_context(self, module_name):
         if module_name in self.modules:
             self.current_context += f"\n{self.modules[module_name]}"
 
-    # Llama a la API de Google AI Platform
     def call_api(self, prompt):
         # Llama al modelo generativo de Google AI Platform
         model = genai.GenerativeModel('gemini-1.5-flash')
         response = model.generate_content(prompt)
 
+        '''# Verificar las valoraciones de seguridad
+        if not response.candidates:
+            raise ValueError("La respuesta no contiene ningún candidato válido.")
+        for candidate in response.candidates:
+            for safety_rating in candidate.safety_ratings:
+                if safety_rating.probability > 0.99999999999:  # Ajusta el umbral según sea necesario
+                    raise ValueError("El contenido de la respuesta es sensible y ha sido bloqueado.")'''
         return response.text.strip()
 
-    # Maneja la entrada del usuario y devuelve la respuesta del asistente
     def handle_input(self, user_input):
         # Actualiza el contexto con la entrada del usuario
         self.current_context += f"\nUsuario: {user_input}\nAsistente:"
@@ -219,7 +221,6 @@ class GeminiChatbot:
         elif "resiliencia" in user_input.lower():
             self.add_module_to_context("resiliencia")
         
-        # Intenta llamar a la API y manejar cualquier error
         try:
             # Llama a la API de Gemini (Google AI Platform en este caso)
             response = self.call_api(self.current_context)
@@ -233,6 +234,14 @@ class GeminiChatbot:
             error = "Por favor reformula tu pregunta o respuesta, ya que contiene información sensible con la que no puedo tratar por políticas establecidas."
             return f"Advertencia: {error}"
         
+        '''# Llama a la API de Gemini (Google AI Platform en este caso)
+        response = self.call_api(self.current_context)
+
+        # Actualiza el contexto con la respuesta del asistente
+        self.current_context += f" {response}"
+        return response'''
+        
+
 # Carga las variables de entorno desde .env
 load_dotenv()
 
@@ -257,4 +266,4 @@ while True:
         print("Chatbot finalizado.")
         break
     response = chatbot.handle_input(user_input)
-    print("\nALMA:", response) 
+    print("\nALMA:", response)  # Mostrar la respuesta directamente
