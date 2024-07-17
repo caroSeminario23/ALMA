@@ -67,7 +67,7 @@ body {
   opacity: 1;
   position: absolute;
   top: 72%;
-  left: 720px;
+  left: 52.3%;
   border-top-left-radius: 61px;
   border-top-right-radius: 61px;
   border-bottom-left-radius: 61px;
@@ -109,7 +109,7 @@ body {
   opacity: 1;
   position: absolute;
   top: 62%;
-  left: 720px;
+  left: 52.3%;
   border-top-left-radius: 61px;
   border-top-right-radius: 61px;
   border-bottom-left-radius: 61px;
@@ -122,10 +122,10 @@ body {
   color: rgba(110,53,29,1);
   position: absolute;
   top: 64%;
-  left: 54%;
+  left: 57.3%;
   font-family: Crimson Text;
   font-weight: Regular;
-  font-size: 1.8vw;
+  font-size: 1.65vw;
   opacity: 1;
   text-align: left;
 }
