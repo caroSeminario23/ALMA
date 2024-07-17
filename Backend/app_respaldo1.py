@@ -1,12 +1,10 @@
 from flask import Flask, request, jsonify
-from flask_cors import CORS
 import json
 import os
 import google.generativeai as genai
 from dotenv import load_dotenv
 
 app = Flask(__name__)
-CORS(app) # Habilita CORS para permitir solicitudes desde cualquier origen
 
 # Clase del Chatbot (sin cambios)
 class GeminiChatbot:
