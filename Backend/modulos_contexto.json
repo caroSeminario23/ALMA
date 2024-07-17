@@ -1,39 +1,14 @@
 {
-    "inicio": "Pregunta siempre por el bienestar del usuario y hazle saber que estás aquí para ayudar.",
-
-    "definicion_violencia intrafamiliar": ["Busca proporcionar información general sobre conflictos familiares y cómo estos pueden afectar a los individuos dentro del hogar. La información debe ser educativa y promover el bienestar y la paz."],
-
-    "objetivos_violencia_intrafamiliar":["Proporciona información sobre los objetivos de la violencia intrafamiliar. Considera la siguiente información: ",
-                                "El objetivo de la violencia intrafamiliar es ejercer poder y control sobre otra persona. ",
-                                "El agresor busca dominar y someter a la víctima a través de la violencia, ",
-                                "ya sea física, psicológica, sexual o económica. "],
-
-    "tipos_violencia intrafamiliar": ["Proporciona información sobre los tipos de violencia intrafamiliar. Considera la siguiente información: "],
-
+    "inicio": "Saluda y menciona tu nombre y objetivo. También pregunta siempre por el bienestar del usuario y hazle saber que estás aquí para ayudar.",
+    "definicion": "Busca proporcionar información general sobre conflictos familiares y cómo estos pueden afectar a los individuos dentro del hogar. La información debe ser educativa y promover el bienestar y la paz.",
     "recursos": "Proporciona recursos y contactos de ayuda.",
-    "empatía": "Muestra empatía y nunca juzgues.",
-    "definición": "La violencia intrafamiliar es cualquier tipo de abuso o maltrato que ocurre dentro del núcleo familiar.",
     "nombres": "La violencia intrafamiliar también es conocida como violencia doméstica o violencia de pareja.",
     "objetivo": "El objetivo de la violencia intrafamiliar es ejercer poder y control sobre otra persona.",
-
-    "efectos_víctima": ["Proporciona información sobre los efectos de la violencia intrafamiliar en la víctima. Considera la siguiente información: Perjudican su",
-                        "integridad corporal y psicológica. Repercuten sobre su independencia e individualidad. Miedo, pánico o angustia. Heridas y ",
-                        "lesiones físicas que, en los peores casos, pueden conducir a la muerte. Altos niveles de ansiedad por miedo a volver a ser ",
-                        "violentados. Tristeza, desmotivación vital y depresión, Inseguridad y desconfianza absoluta ante los demás. Enfado, ira, rencor ",
-                        "y agresividad. Bajos niveles de autoestima. Mutismo, bloqueo emocional e indefension aprendida. También, contribuye a la aparición ",
-                        "de cánceres, enfermedades del corazón, accidentes cerebrovasculares y VIH/sida, pues las víctimas de la violencia a menudo ",
-                        "tratan de hacer frente a sus experiencias traumáticas adoptando comportamientos de riesgo, como consumir tabaco, alcohol y drogas, ",
-                        "así como con prácticas sexuales de riesgo. Sentimientos de soledad y abandono: Pueden sentirse aislados, abandonados y poco queridos. ",
-                        "Exclusión del diálogo y la reflexión: La violencia bloquea y dificulta la capacidad para encontrar modos alternativos de resolver ",
-                        "conflictos de forma pacífica y dialogada, Trastornos en la identidad: Pueden tener una mala imagen de sí mismos, creer que son ",
-                        "malos y por eso sus padres los castigan físicamente. A veces, como modo de defenderse, desarrollan la creencia de que son fuertes ",
-                        "y todopoderosos, capaces de vencer a sus padres y a otros adultos."],
-    
+    "efectos_víctima": ["Proporciona información sobre los efectos de la violencia intrafamiliar en la víctima. Considera la siguiente información: Los ",
+                        "efectos para la víctima incluyen daño físico, emocional y psicológico. Además, pueden experimentar miedo, ansiedad y depresión."],
     "efectos_sociedad": ["Proporciona información sobre los efectos de la violencia intrafamiliar en la víctima. Considera la siguiente información: Los ",
                         "efectos para la sociedad incluyen aumento de la carga en el sistema de salud y en las fuerzas del orden. Además, otros efectos son ",
                         "el usentismo laboral entre las mujeres con pareja y el incremento de la delincuencia juvenil."],
-
-
     "causas": "Las causas incluyen factores como el abuso de sustancias, problemas económicos, y antecedentes de violencia en la familia.",
     "tipos": "Los tipos de violencia intrafamiliar incluyen física, psicológica, sexual y económica.",
     "violencia_física": "La violencia física incluye cualquier acto que cause daño corporal a la víctima.",
@@ -92,7 +67,7 @@
     "plan_acción_objetivo": "El objetivo principal del Plan de Acción Conjunto es prevenir la violencia contra las mujeres y niñas.",
     "entidades_involucradas": "Entidades involucradas incluyen el Ministerio de la Mujer, la Policía Nacional y organizaciones de derechos humanos.",
     "lineamientos_estratégicos": "Los lineamientos estratégicos del plan incluyen prevención, protección y promoción de derechos.",
-    "medidas_indígenas": "Se han implementado medidas específicas para la protección de mujeres y niñas indígenas.",
+    "medidas_protección": "Se han implementado medidas específicas para la protección de mujeres y niñas indígenas.",
     "impacto_niños": "La violencia intrafamiliar tiene un impacto negativo en los niños que son testigos, afectando su desarrollo emocional y psicológico.",
     "papel_instituciones": "Las instituciones educativas juegan un papel crucial en la identificación y apoyo a víctimas de violencia intrafamiliar.",
     "legislación_prevención": "La legislación influye en la prevención y el tratamiento de la violencia intrafamiliar mediante leyes y políticas.",

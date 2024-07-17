@@ -9,7 +9,7 @@ body {
   height: 100vh;
   background: rgba(240,143,0,0.5);
   opacity: 1;
-  position: relative;
+  position: absolute;
   top: 0px;
   left: 0px;
   overflow: hidden;

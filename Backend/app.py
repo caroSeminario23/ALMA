@@ -1,9 +1,14 @@
+from flask import Flask, request, jsonify
+from flask_cors import CORS
 import json
 import os
 import google.generativeai as genai
 from dotenv import load_dotenv
 
-# Clase del Chatbot
+app = Flask(__name__)
+CORS(app) # Habilita CORS para permitir solicitudes desde cualquier origen
+
+# Clase del Chatbot (sin cambios)
 class GeminiChatbot:
     def __init__(self, api_key):
         self.api_key = api_key
@@ -231,12 +236,12 @@ class GeminiChatbot:
         except ValueError as ve:
             error = "Por favor reformula tu pregunta o respuesta, ya que contiene información sensible con la que no puedo tratar por políticas establecidas."
             return f"Advertencia: {error}"
-        
+
 # Carga las variables de entorno desde .env
 load_dotenv()
 
 # Verifica y carga la clave API
-api_key = os.environ["API_KEY"]
+api_key = os.environ.get("API_KEY")
 if not api_key:
     raise ValueError("No se encontró la clave API. Asegúrate de haber definido la variable de entorno 'GEMINI_CHATBOT_API_KEY' en el archivo .env.")
 else:
@@ -248,12 +253,11 @@ genai.configure(api_key=api_key)
 # Inicia el chatbot
 chatbot = GeminiChatbot(api_key)
 
-# Interacción con el chatbot
-print("Chatbot iniciado. Escribe 'salir' para terminar.")
-while True:
-    user_input = input("\nTú: ")
-    if user_input.lower() == "salir":
-        print("Chatbot finalizado.")
-        break
+@app.route('/chat', methods=['POST'])
+def chat():
+    user_input = request.json.get('message')
     response = chatbot.handle_input(user_input)
-    print("\nALMA:", response) 
+    return jsonify({'response': response})
+
+if __name__ == '__main__':
+    app.run(debug=True, port=5000)
