@@ -67,7 +67,7 @@ body {
   opacity: 1;
   position: absolute;
   top: 72%;
-  left: 700px;
+  left: 720px;
   border-top-left-radius: 61px;
   border-top-right-radius: 61px;
   border-bottom-left-radius: 61px;
@@ -109,7 +109,7 @@ body {
   opacity: 1;
   position: absolute;
   top: 62%;
-  left: 700px;
+  left: 720px;
   border-top-left-radius: 61px;
   border-top-right-radius: 61px;
   border-bottom-left-radius: 61px;
@@ -122,7 +122,7 @@ body {
   color: rgba(110,53,29,1);
   position: absolute;
   top: 64%;
-  left: 57%;
+  left: 54%;
   font-family: Crimson Text;
   font-weight: Regular;
   font-size: 1.8vw;
@@ -144,7 +144,7 @@ body {
   overflow: hidden;
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
 }
-.v21_11 {
+.v21_11 { /*Palabra contactanos*/
   width: 200px;
   color: rgba(216,194,178,1);
   position: absolute;
@@ -156,7 +156,7 @@ body {
   opacity: 1;
   text-align: left;
 }
-.v24_21 {
+.v24_21 { /*Palabra Enviar*/
   width: 86px;
   color: rgba(216,194,178,1);
   position: absolute;
@@ -169,7 +169,7 @@ body {
   text-align: left;
   cursor: pointer;
 }
-.v19_13 {
+.v19_13 { /*Cuadro Fondo Gracias por...*/
   width: 86%;
   height: 10%;
   background: rgba(156,98,65,0.5);
@@ -184,7 +184,7 @@ body {
   overflow: hidden;
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
 }
-.v19_12 {
+.v19_12 { /*Palabra Gracias por...*/
   width: 80%;
   color: rgba(216,194,178,1);
   position: absolute;
@@ -196,7 +196,7 @@ body {
   opacity: 1;
   text-align: left;
 }
-.v19_10 {
+.v19_10 { /*Cuadro texto Nos hemos sentido...*/
   width: 42%;
   height: 36.6%;
   background: rgba(216,194,178,1);
@@ -211,7 +211,7 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   overflow: hidden;
 }
-.v17_10 {
+.v17_10 { /*Palabra Sistema de apoyo...*/
   width: 855px;
   color: rgba(156,98,65,1);
   position: absolute;
@@ -224,7 +224,7 @@ body {
   opacity: 1;
   text-align: center;
 }
-.v17_3 {
+.v17_3 { /*Palabra ALMA*/
   width: 361px;
   color: rgba(110,53,29,0.800000011920929);
   position: absolute;
@@ -237,7 +237,7 @@ body {
   opacity: 1;
   text-align: center;
 }
-.v17_2 {
+.v17_2 { /*Figura corazón*/
   width: 17%;
   height: 18%;
   background: url("../images/v9_15.png");
