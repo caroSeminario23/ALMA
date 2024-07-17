@@ -305,3 +305,17 @@ body {
   padding: 0.5rem;
   box-sizing: border-box;
 }
+.home {
+  width: 5%;
+  height: 7%;
+  background: url("../images/home.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 90% 100%;
+  opacity: 1;
+  position: absolute;
+  top: 10%;
+  left: 87%;
+  overflow: hidden; 
+  cursor: pointer;
+}
