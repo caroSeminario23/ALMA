@@ -13,12 +13,12 @@
 		<div class="v9_4"></div>
 		<buttton class="enviar"></buttton>
 		<div class="mensaje_recuadro">
-			<textarea class="mensaje_info" placeholder="Escribe tu mensaje aquí"></textarea>
+			<textarea id="mensaje" class="mensaje_info" placeholder="Escribe tu mensaje aquí"></textarea>
 		</div>
 		<div class="mensaje_texto"></div>
 		<span class="v23_16">Mensaje</span>
 		<div class="email_recuadro">
-			<textarea class="email_info" placeholder="Escribe tu email aquí"></textarea>
+			<textarea id="email" class="email_info" placeholder="Escribe tu email aquí"></textarea>
 		</div>
 		<div class="contactanos"></div>
 		<div class="email_texto"></div>
@@ -34,11 +34,8 @@
 		<span class="v19_11">Nos sentimos honrados de haberte asistido. Recuerda que no estás solo(a). Siempre puedes contar con nuestro apoyo. La esperanza y la ayuda están a tu alcance, y juntos podemos crear un futuro más seguro y brillante. Nunca dudes en buscar la ayuda que necesitas; tu bienestar y seguridad son lo más importante para nosotros.</span>
 	</div>
 
-	<script>
-		document.querySelector('.enviar').addEventListener('click', () => {
-			window.location.href = 'bienvenida.html';
-		});
-	</script>
+	<script src="../javascript/guardar_recomendaciones.js"></script>
+
 	<script>
 		document.querySelector('.v24_21').addEventListener('click', () => {
 			window.location.href = 'bienvenida.html';

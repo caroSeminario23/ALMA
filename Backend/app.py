@@ -4,6 +4,7 @@ import json
 import os
 import google.generativeai as genai
 from dotenv import load_dotenv
+import csv
 
 app = Flask(__name__)
 CORS(app) # Habilita CORS para permitir solicitudes desde cualquier origen
@@ -258,6 +259,34 @@ def chat():
     user_input = request.json.get('message')
     response = chatbot.handle_input(user_input)
     return jsonify({'response': response})
+
+@app.route('/guardar_mensaje', methods=['POST'])
+def guardar_mensaje():
+    data = request.json
+    email = data.get('email')
+    mensaje = data.get('mensaje')
+
+    if not email or not mensaje:
+        return jsonify({"error": "Email y mensaje son requeridos"}), 400
+
+    # Ruta del archivo CSV
+    csv_file_path = 'Backend/mensajes_usuarios.csv'
+
+    # Verificar si el archivo CSV existe
+    file_exists = os.path.isfile(csv_file_path)
+
+    # Escribir en el archivo CSV
+    with open(csv_file_path, 'a', newline='') as csvfile:
+        fieldnames = ['Email', 'Mensaje']
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+
+        # Escribir el encabezado solo si el archivo es nuevo
+        if not file_exists:
+            writer.writeheader()
+
+        writer.writerow({'Email': email, 'Mensaje': mensaje})
+
+    return jsonify({"message": "Mensaje guardado exitosamente"}), 200
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
